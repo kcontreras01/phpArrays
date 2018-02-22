@@ -9,30 +9,42 @@
 	<ul>
 
 
+            <?php foreach ($tasks as $task) : ?>
+                <li>
+                    <?php if ($task->completed) : ?>
+                    <strike><?= $task->description; ?></strike>
+                    <?php else: ?>
+                    <?= $task->description; ?>
+                    <?php endif; ?>
+                </li>
 
-        <li>
-            <strong>Name: </strong> <?=ucwords($task['title']); ?>
-        </li>
-        <li>
-            <strong>Due Date: </strong> <?=ucwords($task['due']); ?>
-        </li>
-        <li>
-            <strong>Person Responsible: </strong> <?=ucwords($task['assigned_to']); ?>
-        </li>
+            <?php endforeach; ?>
+
+
+
+<!--        <li>-->
+<!--            <strong>Name: </strong> --><?//=ucwords($task['title']); ?>
+<!--        </li>-->
+<!--        <li>-->
+<!--            <strong>Due Date: </strong> --><?//=ucwords($task['due']); ?>
+<!--        </li>-->
+<!--        <li>-->
+<!--            <strong>Person Responsible: </strong> --><?//=ucwords($task['assigned_to']); ?>
+<!--        </li>-->
 <!--        <li>-->
 <!--            <strong>Status: </strong> --><?//=$task['completed'] ? 'Complete' : 'Incomplete'; ?>
 <!--        </li>-->
-
-        <li>
-            <strong>Status: </strong>
-
-            <?php if($task['completed']) : ?>
-                <span class="icon">&#9989;</span>
-            <?php else : ?>
-                <span class="icon">Incomplete</span>
-            <?php endif; ?>
-
-        </li>
+<!---->
+<!--        <li>-->
+<!--            <strong>Status: </strong>-->
+<!---->
+<!--            --><?php //if($task['completed']) : ?>
+<!--                <span class="icon">&#9989;</span>-->
+<!--            --><?php //else : ?>
+<!--                <span class="icon">Incomplete</span>-->
+<!--            --><?php //endif; ?>
+<!---->
+<!--        </li>-->
 
 	</ul>
 
