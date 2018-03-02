@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/phpArrays.iml" filepath="$PROJECT_DIR$/.idea/phpArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/phpForms.iml" filepath="$PROJECT_DIR$/.idea/phpForms.iml" />
     </modules>
   </component>
 </project>
